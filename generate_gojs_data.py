@@ -17,6 +17,10 @@ linkDataArray = []
 # Track datasets and their primary keys
 dataset_keys = {}
 
+# Track relationships
+relationships = []
+
+# Process datasets
 for dataset in schema.get('datasets', []):
     dataset_name = dataset['name']
     items = []
@@ -53,17 +57,27 @@ for dataset in schema.get('datasets', []):
     # Track primary key for relationships
     dataset_keys[dataset_name] = primary_key
 
-    # Check for foreign key relationships
-    for field in dataset.get('fields', {}).get('fieldArray', []):
-        if field.get('aliasName') == "Support FK" or field.get('aliasName') == "Foreign Key":  # Identify foreign key fields
-            related_table = field.get('modelName', '').replace('_guid', '')  # Guess related table name
-            if related_table in dataset_keys:
-                linkDataArray.append({
-                    "from": dataset_name,
-                    "to": related_table,
-                    "text": "1",  # Assuming 1-to-many relationship
-                    "toText": "0..N"
-                })
+# Process relationships
+for dataset in schema.get('datasets', []):
+    if dataset.get('datasetType') == 'esriDTRelationshipClass':
+        relationship = {
+            "origin": dataset.get('originClassNames', [{}])[0].get('name'),
+            "destination": dataset.get('destinationClassNames', [{}])[0].get('name'),
+            "cardinality": dataset.get('cardinality'),
+            "forwardPathLabel": dataset.get('forwardPathLabel'),
+            "backwardPathLabel": dataset.get('backwardPathLabel')
+        }
+        relationships.append(relationship)
+
+# Create links based on relationships
+for rel in relationships:
+    if rel['origin'] in dataset_keys and rel['destination'] in dataset_keys:
+        linkDataArray.append({
+            "from": rel['origin'],
+            "to": rel['destination'],
+            "text": "1" if rel['cardinality'] == 'esriRelCardinalityOneToMany' else "1",
+            "toText": "0..N" if rel['cardinality'] == 'esriRelCardinalityOneToMany' else "1"
+        })
 
 # Combine into the final structure
 output = {

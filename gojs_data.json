@@ -1176,5 +1176,24 @@
       "inheritedItems": []
     }
   ],
-  "linkDataArray": []
+  "linkDataArray": [
+    {
+      "from": "TRF_Assets.OEC_TRF.Signs",
+      "to": "TRF_Assets.OEC_TRF.Signs__ATTACH",
+      "text": "1",
+      "toText": "0..N"
+    },
+    {
+      "from": "TRF_Assets.OEC_TRF.Supports",
+      "to": "TRF_Assets.OEC_TRF.Signs",
+      "text": "1",
+      "toText": "0..N"
+    },
+    {
+      "from": "TRF_Assets.OEC_TRF.Supports",
+      "to": "TRF_Assets.OEC_TRF.Supports__ATTACH",
+      "text": "1",
+      "toText": "0..N"
+    }
+  ]
 }
