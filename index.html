@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoJS ER Diagram</title>
+  <!-- Include GoJS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/gojs@3.0.19/release/go.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #myDiagramDiv {
+      width: 100%;
+      height: 700px;
+      border: solid 1px black;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Entity-Relationship Diagram</h1>
+  <div id="myDiagramDiv"></div>
+
+  <script>
+    function init() {
+      // Load the JSON data (gojs_data.json)
+      fetch('gojs_data.json')
+        .then(response => response.json())
+        .then(data => {
+          // Initialize the GoJS diagram
+          const myDiagram = new go.Diagram('myDiagramDiv', {
+            allowDelete: false,
+            allowCopy: false,
+            layout: new go.ForceDirectedLayout({ isInitial: false }),
+            'undoManager.isEnabled': true
+          });
+
+          // Define the node template
+          myDiagram.nodeTemplate = new go.Node('Auto', {
+            selectionAdorned: true,
+            resizable: true,
+            layoutConditions: go.LayoutConditions.Standard & ~go.LayoutConditions.NodeSized,
+            fromSpot: go.Spot.LeftRightSides,
+            toSpot: go.Spot.LeftRightSides
+          })
+            .add(
+              new go.Shape('RoundedRectangle', {
+                stroke: '#e8f1ff',
+                strokeWidth: 3
+              })
+                .theme('fill', 'primary'),
+              new go.Panel('Table', {
+                margin: 8,
+                stretch: go.Stretch.Fill
+              })
+                .addRowDefinition(0, { sizing: go.Sizing.None })
+                .add(
+                  new go.TextBlock({
+                    row: 0,
+                    alignment: go.Spot.Center,
+                    margin: new go.Margin(0, 24, 0, 2),
+                    font: 'bold 18px sans-serif'
+                  })
+                    .bind('text', 'key')
+                    .theme('stroke', 'text'),
+                  new go.Panel('Table', {
+                    name: 'LIST',
+                    row: 1,
+                    alignment: go.Spot.TopLeft
+                  })
+                    .add(
+                      new go.TextBlock('Attributes', {
+                        row: 0,
+                        alignment: go.Spot.Left,
+                        margin: new go.Margin(3, 24, 3, 2),
+                        font: 'bold 15px sans-serif'
+                      })
+                        .theme('stroke', 'text'),
+                      new go.Panel('Vertical', {
+                        row: 1,
+                        name: 'NonInherited',
+                        alignment: go.Spot.TopLeft,
+                        defaultAlignment: go.Spot.Left,
+                        itemTemplate: new go.Panel('Horizontal', { margin: new go.Margin(2, 0) })
+                          .add(
+                            new go.Shape({
+                              desiredSize: new go.Size(15, 15),
+                              strokeWidth: 0,
+                              margin: new go.Margin(0, 5, 0, 0)
+                            })
+                              .bind('figure')
+                              .themeData('fill', 'color'),
+                            new go.TextBlock({
+                              font: '14px sans-serif',
+                              stroke: 'black'
+                            })
+                              .bind('text', 'name')
+                              .bind('font', 'iskey', (k) => (k ? 'italic 14px sans-serif' : '14px sans-serif'))
+                              .theme('stroke', 'text')
+                          )
+                      })
+                        .bind('itemArray', 'items')
+                    )
+                )
+            );
+
+          // Define the link template
+          myDiagram.linkTemplate = new go.Link({
+            selectionAdorned: true,
+            layerName: 'Background',
+            reshapable: true,
+            routing: go.Routing.AvoidsNodes,
+            corner: 5,
+            curve: go.Curve.JumpOver
+          })
+            .add(
+              new go.Shape({
+                stroke: '#f7f9fc',
+                strokeWidth: 3
+              })
+                .theme('stroke', 'link'),
+              new go.TextBlock({
+                textAlign: 'center',
+                font: 'bold 14px sans-serif',
+                stroke: 'black',
+                segmentIndex: 0,
+                segmentOffset: new go.Point(NaN, NaN),
+                segmentOrientation: go.Orientation.Upright
+              })
+                .bind('text')
+                .theme('stroke', 'text'),
+              new go.TextBlock({
+                textAlign: 'center',
+                font: 'bold 14px sans-serif',
+                stroke: 'black',
+                segmentIndex: -1,
+                segmentOffset: new go.Point(NaN, NaN),
+                segmentOrientation: go.Orientation.Upright
+              })
+                .bind('text', 'toText')
+                .theme('stroke', 'text')
+            );
+
+          // Load the data into the diagram
+          myDiagram.model = new go.GraphLinksModel({
+            copiesArrays: true,
+            copiesArrayObjects: true,
+            nodeDataArray: data.nodeDataArray,
+            linkDataArray: data.linkDataArray
+          });
+        })
+        .catch(error => console.error('Error loading GoJS data:', error));
+    }
+
+    // Initialize the diagram when the page loads
+    window.addEventListener('DOMContentLoaded', init);
+  </script>
+</body>
+</html>

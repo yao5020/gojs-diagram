@@ -1,0 +1,1180 @@
+{
+  "nodeDataArray": [
+    {
+      "key": "TRF_Assets.OEC_TRF.Sign_Damage_Reporting",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "iskey": true,
+          "figure": "Decision",
+          "color": "green"
+        },
+        {
+          "name": "GlobalID",
+          "type": "esriFieldTypeGlobalID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "reported_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "reporter_name",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "reporter_phone",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "reported_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "damage_desc",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "facility",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "milemarker",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "location_desc",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "road_name",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "road_direction",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "location",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_count",
+          "type": "esriFieldTypeSmallInteger",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "post_replace_yn",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "damage_status",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "created_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "created_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "last_edited_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "last_edited_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_guid",
+          "type": "esriFieldTypeGUID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        }
+      ],
+      "inheritedItems": []
+    },
+    {
+      "key": "TRF_Assets.OEC_TRF.Signs",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "iskey": true,
+          "figure": "Decision",
+          "color": "green"
+        },
+        {
+          "name": "GlobalID",
+          "type": "esriFieldTypeGlobalID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_id",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "support_id",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "support_guid",
+          "type": "esriFieldTypeGUID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_barcode_yn",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_barcode",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_number",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_project_type",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "contract_number",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "task_number",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "service_status",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "mutcd",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "mutcd_other",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "mutcd_category",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_classification",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "standard_number",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "standard_number_desc",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "standard_number_source",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_legend",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_width_in",
+          "type": "esriFieldTypeSmallInteger",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_height_in",
+          "type": "esriFieldTypeSmallInteger",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "substrate_material",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "substrate_material_other",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sheeting_type",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_location",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_orientation",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "install_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "retire_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "retire_reason",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "owner",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "maintained_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_record_status",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "criticality",
+          "type": "esriFieldTypeSmallInteger",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "created_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "created_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "last_edited_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "last_edited_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "longitude",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "latitude",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "Shape",
+          "type": "esriFieldTypeGeometry",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        }
+      ],
+      "inheritedItems": []
+    },
+    {
+      "key": "TRF_Assets.OEC_TRF.Signs__ATTACH",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [
+        {
+          "name": "ATTACHMENTID",
+          "type": "esriFieldTypeOID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "REL_GLOBALID",
+          "type": "esriFieldTypeGUID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "CONTENT_TYPE",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "ATT_NAME",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "DATA_SIZE",
+          "type": "esriFieldTypeInteger",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "DATA",
+          "type": "esriFieldTypeBlob",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "GLOBALID",
+          "type": "esriFieldTypeGlobalID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        }
+      ],
+      "inheritedItems": []
+    },
+    {
+      "key": "TRF_Assets.OEC_TRF.Supports",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "iskey": true,
+          "figure": "Decision",
+          "color": "green"
+        },
+        {
+          "name": "GlobalID",
+          "type": "esriFieldTypeGlobalID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "support_id",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "structure_id",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "support_project_type",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "contract_number",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "task_number",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "facility",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "id_prefix",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "id_rte_no",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "mp_suffix",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "route_number",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "road_direction",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "route_id",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "milepoint",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "milemarker",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "location",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "owner",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "maintained_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "install_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "retire_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "support_type",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "support_type_other",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "post_type",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "post_count",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "breakaway",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "asset_notes",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "support_status",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "plan_link",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "plan_sheet",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "latitude",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "longitude",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "created_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "created_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "last_edited_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "last_edited_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "form_version",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "app_version",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "Shape",
+          "type": "esriFieldTypeGeometry",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        }
+      ],
+      "inheritedItems": []
+    },
+    {
+      "key": "TRF_Assets.OEC_TRF.Supports__ATTACH",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [
+        {
+          "name": "ATTACHMENTID",
+          "type": "esriFieldTypeOID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "REL_GLOBALID",
+          "type": "esriFieldTypeGUID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "CONTENT_TYPE",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "ATT_NAME",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "DATA_SIZE",
+          "type": "esriFieldTypeInteger",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "DATA",
+          "type": "esriFieldTypeBlob",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "GLOBALID",
+          "type": "esriFieldTypeGlobalID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        }
+      ],
+      "inheritedItems": []
+    },
+    {
+      "key": "TRF_Assets.OEC_TRF.Sign_Inspection",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "iskey": true,
+          "figure": "Decision",
+          "color": "green"
+        },
+        {
+          "name": "GlobalID",
+          "type": "esriFieldTypeGlobalID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_barcode",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "inspected_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "inspection_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "condition",
+          "type": "esriFieldTypeSmallInteger",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "asset_notes",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "rr_white",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "rr_red",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "rr_yellow",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "rr_green",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "rr_blue",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "rr_brown",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "rr_purple",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_facing",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_guid",
+          "type": "esriFieldTypeGUID",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "sign_id",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "created_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "created_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "last_edited_by",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "last_edited_date",
+          "type": "esriFieldTypeDate",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        }
+      ],
+      "inheritedItems": []
+    },
+    {
+      "key": "TRF_Assets.OEC_TRF.Signs__ATTACHREL",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [],
+      "inheritedItems": []
+    },
+    {
+      "key": "TRF_Assets.OEC_TRF.SupportsToMDTA_Signs",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [],
+      "inheritedItems": []
+    },
+    {
+      "key": "TRF_Assets.OEC_TRF.Supports__ATTACHREL",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [],
+      "inheritedItems": []
+    },
+    {
+      "key": "TRF_Assets.OEC_TRF.Mile_Marker_Buffer",
+      "location": {
+        "x": 0,
+        "y": 0
+      },
+      "items": [
+        {
+          "name": "OBJECTID",
+          "type": "esriFieldTypeOID",
+          "iskey": true,
+          "figure": "Decision",
+          "color": "green"
+        },
+        {
+          "name": "Input_FID",
+          "type": "esriFieldTypeInteger",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "FACILITY",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "FIRST",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "SECOND",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "THIRD",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "FOURTH",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "TYPE",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "SPUR",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "COUNTY",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "MM3",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "MM3_TextShort",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "Facility_MM3",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "Survey_Entry_Facility",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "Survey_Entry_MileMarker",
+          "type": "esriFieldTypeString",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "Shape",
+          "type": "esriFieldTypeGeometry",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "Shape.STArea()",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        },
+        {
+          "name": "Shape.STLength()",
+          "type": "esriFieldTypeDouble",
+          "iskey": false,
+          "figure": "Decision",
+          "color": "blue"
+        }
+      ],
+      "inheritedItems": []
+    }
+  ],
+  "linkDataArray": []
+}
